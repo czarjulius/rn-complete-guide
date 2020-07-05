@@ -48,8 +48,8 @@ const GameScreen = (props) => {
       currentLow.current = currentGuess;
     }
     const nextNumber = generateRandomBetween(
-      currentLow,
-      currentHigh,
+      currentLow.current,
+      currentHigh.current,
       currentGuess
     );
     setCurrentGuess(nextNumber);
